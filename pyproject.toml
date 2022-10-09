@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "game"
+version = "0.0.1-alpha.0"
+description = "This is a Python implementation for 2048 game"
+authors = ["Fernanda de Camargo"]
+keywords = ["game", "python", "docker"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+black = "22.10.0"
+isort = "5.10.1"
+autoflake = "^1.7"
+pytest = "^6.2.5"
+packaging = "21.3"
+parameterized = "^0.8.1"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
