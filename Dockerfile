@@ -9,6 +9,7 @@ ENV PYTHONUNBUFFERED=1 \
 # Update the image, install python3 pip and poetry and then remove unnecessary cache
 RUN apk update && \
     apk add --no-cache py3-pip curl && \
+    apk add python3-tkinter && \
     python3 -m  pip install "poetry==1.1.15" && \
     python3 -m pip install --upgrade pip wheel setuptools && \
     rm -rf /var/cache/apk/*
